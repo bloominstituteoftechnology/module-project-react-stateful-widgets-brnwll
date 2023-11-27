@@ -29,16 +29,14 @@ STEPS 4, 5, 6:
 
 import React, { useState } from 'react'; /* STEP 0 */
 
-const initialMood = 'Not sure how I feel';
-const happyMood = 'Quite happy!';
-const sadMood = 'Rather sad';
+const MOODS = {
+  happy: 'Quite happy!',
+  sad: 'Rather sad',
+  none: 'Not sure how I feel'
+}
 
 export default function Moods() {
-  const MOODS = {
-    happy: 'Quite happy!',
-    sad: 'Rather sad',
-    none: 'Not sure how I feel'
-  }
+
 
   /* STEP 1 */
   const [mood, setMood] = useState(MOODS.none)
